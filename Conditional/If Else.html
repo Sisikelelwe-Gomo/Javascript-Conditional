@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        If time is less than 16 it will show "Have a nice day"
+        <br>
+        else it will show "Good night."
+    </p>
+    <button onclick="myFunction()">Click me</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+
+            var x = "";
+            var time = new Date().getHours();
+
+            if(time < 16){
+                x = "Have a nice day";
+            }else{
+                x = "Good night";
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</body>
+</html>
